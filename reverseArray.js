@@ -30,3 +30,33 @@ MinandMax(arr)
 
 ///////  arr = Array  
 ////////////////  End/////////
+
+/// Find the "Kth"  element of an array  In Ascending Order Sorted Form
+function NumberInAscendingOrder(arr,n){
+    const Unique = [...new Set(arr)];
+        Unique.sort((a,b) => a-b);
+       return Unique[n-1]
+}
+
+NumberInAscendingOrder(arr,3)
+
+// arr =  array
+// n= number of which element you want
+
+
+
+/// Find the "Kth"  element of an array  In Descending  Order Sorted Form
+function NumberInDescendOrder(arr,n){
+    const Unique = [...new Set(arr)];
+        Unique.sort((a,b) => b-a);
+       return Unique[n-1]
+}
+
+NumberInDescendOrder(arr,2)
+
+// arr =  array
+// n= number of which element you want
+
+
+
+
